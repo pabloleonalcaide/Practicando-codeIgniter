@@ -58,7 +58,7 @@ $route['lista'] = 'lista/view';
 $route['lista/mail'] = 'email/send_mail';
 
 $route['news/(:any)'] = 'news/view/$1';
-$route['news'] = 'news/save_news';
+$route['news'] = 'news';
 // si no hay datos en la uri, va directo al controlador pages a la función view
 $route['default_controller'] = 'pages/view';
 // si pasamos cualquier dato por la uri, lo dirige a la función view del controlador pages

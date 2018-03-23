@@ -35,6 +35,8 @@ class News extends CI_Controller{
 			show_404();
 		}
 		$data['title'] = $data['news_item']['title'];
+		$data['subTitle'] = "Subtitle";
+
 
 		//render the view
 		$this->load->view('templates/header',$data);
@@ -48,7 +50,7 @@ class News extends CI_Controller{
 		$this->output->cache(50);	
 	    $this->load->helper('form');
 	    $this->load->library('form_validation');
-
+		$data['subTitle'] = "Subtitle";
 	    $data['title'] = 'Create a news item';
 	    //set_rules set the rules for the form validation
 	    $this->form_validation->set_rules('title', 'Title', 'required'); //nameInputField, nameErrorMessages, rule

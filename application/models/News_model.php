@@ -29,15 +29,7 @@ class News_model extends CI_Model{
 			);
 		return $this->db->insert('news',$data);
 	}
-	public function save_news(){
-		$this->load->dbutil();
-		$backup = $this->dbutil->backup();
 
-		$this->load->helper('file');
-		write_file('./comprimido.gz', $backup);
-		$this->load->helper('download');
-		force_download('comprimido.gz',$backup);
-	}
 }
 
  ?>
