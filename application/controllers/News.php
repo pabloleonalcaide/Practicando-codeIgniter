@@ -36,6 +36,10 @@ class News extends CI_Controller{
 		}
 		$data['title'] = $data['news_item']['title'];
 		$data['subTitle'] = "Subtitle";
+<<<<<<< HEAD
+		$data['page_title'] = 'Titulo prueba';
+=======
+>>>>>>> 943e2bc4c0f82ea5dfabe5f7249d13d574f239fe
 
 
 		//render the view
@@ -52,14 +56,24 @@ class News extends CI_Controller{
 	    $this->load->library('form_validation');
 		$data['subTitle'] = "Subtitle";
 	    $data['title'] = 'Create a news item';
+<<<<<<< HEAD
+		$data['page_title'] = 'Titulo prueba';
+
+=======
+>>>>>>> 943e2bc4c0f82ea5dfabe5f7249d13d574f239fe
 	    //set_rules set the rules for the form validation
 	    $this->form_validation->set_rules('title', 'Title', 'required'); //nameInputField, nameErrorMessages, rule
 	    $this->form_validation->set_rules('text', 'Text', 'required');
 
 	    if ($this->form_validation->run() === FALSE){ //check the form
 	        $this->load->view('templates/header', $data);
+<<<<<<< HEAD
+	        $this->load->view('news/create',$data);
+	        $this->load->view('templates/footer',$data);
+=======
 	        $this->load->view('news/create');
 	        $this->load->view('templates/footer');
+>>>>>>> 943e2bc4c0f82ea5dfabe5f7249d13d574f239fe
 	    }
 	    else{
 	        $this->news_model->set_news(); // insert into the db

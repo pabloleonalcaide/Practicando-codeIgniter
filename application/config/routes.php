@@ -56,7 +56,11 @@ $route['news/probando'] = 'pages/view/about';
 
 $route['lista'] = 'lista/view';
 $route['lista/mail'] = 'email/send_mail';
+<<<<<<< HEAD
+$route['auth'] = 'auth/index';
+=======
 
+>>>>>>> 943e2bc4c0f82ea5dfabe5f7249d13d574f239fe
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 // si no hay datos en la uri, va directo al controlador pages a la función view

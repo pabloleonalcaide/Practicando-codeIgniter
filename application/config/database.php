@@ -77,7 +77,11 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
+<<<<<<< HEAD
+	'password' => 'root',
+=======
 	'password' => '',
+>>>>>>> 943e2bc4c0f82ea5dfabe5f7249d13d574f239fe
 	'database' => 'codeigniterTutorial',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
