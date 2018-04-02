@@ -1,5 +1,17 @@
 <p> Hi! This is the Home Page! </p>
-<p> Learning CodeIgniter :) </p>
-<a href="http://localhost/codeIgniterPruebas/index.php/lista/"> Lista </a> Lista de elementos cargados desde el modelo <br>
-<a href="http://localhost/codeIgniterPruebas/index.php/news"> Noticias </a> Listado de noticias <br>
-<a href="http://localhost/codeIgniterPruebas/index.php/news/create"> Crear Noticia </a> Añadir noticia a la bd <br>
+<?php echo anchor('lista','Lista');?> Lista de elementos cargados desde el modelo<br>
+<?php echo anchor('news','Noticias');?> Listado de noticias <br>
+<?php echo anchor('news/create','Crear_noticia');?>Añadir noticia a la bd <br>
+<?php 
+	$attrs = array(
+        'width'       => 800,
+        'height'      => 600,
+        'scrollbars'  => 'yes',
+        'status'      => 'yes',
+        'resizable'   => 'yes',
+        'screenx'     => 0,
+        'screeny'     => 0,
+        'window_name' => '_blank'
+);
+
+echo anchor_popup('news/create','popup!',$attrs); ?>

@@ -26,8 +26,7 @@ class Auth extends CI_Controller{
 		if (!$this->ion_auth->logged_in()){
 			// redirect them to the login page
 			redirect('auth/login', 'refresh');
-		}else if (!$this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
-		{
+		}else if (!$this->ion_auth->is_admin()){
 			// redirect them to the home page because they must be an administrator to view this
 			return show_error('You must be an administrator to view this page.');
 		}else{
@@ -54,7 +53,7 @@ class Auth extends CI_Controller{
 		$this->form_validation->set_rules('identity', str_replace(':', '', $this->lang->line('login_identity_label')), 'required');
 		$this->form_validation->set_rules('password', str_replace(':', '', $this->lang->line('login_password_label')), 'required');
 
-		if ($this->form_validation->run() === TRUE){
+		if ($this->form_validation->run()){
 			// check to see if the user is logging in
 			// check for "remember me"
 			$remember = (bool)$this->input->post('remember');
@@ -63,7 +62,7 @@ class Auth extends CI_Controller{
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('/', 'refresh');
+				redirect('auth/index', 'refresh');
 			}else{
 				// if the login was un-successful
 				// redirect them back to the login page
@@ -117,7 +116,7 @@ class Auth extends CI_Controller{
 
 		$user = $this->ion_auth->user()->row();
 
-		if ($this->form_validation->run() === FALSE){
+		if ($this->form_validation->run()){
 			// display the form
 			// set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
@@ -177,7 +176,7 @@ class Auth extends CI_Controller{
 		}
 
 
-		if ($this->form_validation->run() === FALSE){
+		if ($this->form_validation->run()){
 			$this->data['type'] = $this->config->item('identity', 'ion_auth');
 			// setup the input
 			$this->data['identity'] = array('name' => 'identity',
@@ -212,14 +211,12 @@ class Auth extends CI_Controller{
 			// run the forgotten password method to email an activation code to the user
 			$forgotten = $this->ion_auth->forgotten_password($identity->{$this->config->item('identity', 'ion_auth')});
 
-			if ($forgotten)
-			{
+			if ($forgotten){
 				// if there were no errors
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
 				redirect("auth/login", 'refresh'); //we should display a confirmation page here instead of the login page
 			}
-			else
-			{
+			else{
 				$this->session->set_flashdata('message', $this->ion_auth->errors());
 				redirect("auth/forgot_password", 'refresh');
 			}
@@ -492,7 +489,13 @@ class Auth extends CI_Controller{
 			$this->_render_page('auth/create_user', $this->data);
 		}
 	}
+	public function redirectUser(){
+		if ($this->ion_auth->is_admin()){
+			redirect('auth', 'refresh');
+		}
+			redirect('/', 'refresh');
 
+	}
 	/**
 	 * Edit a user
 	 *
@@ -560,21 +563,12 @@ class Auth extends CI_Controller{
 				if ($this->ion_auth->update($user->id, $data)){
 					// redirect them back to the admin page if admin, or to the base url if non admin
 					$this->session->set_flashdata('message', $this->ion_auth->messages());
-					if ($this->ion_auth->is_admin()){
-						redirect('auth', 'refresh');
-					}else{
-						redirect('/', 'refresh');
-					}
+					$this->redirectUser();
 
 				}else{
 					// redirect them back to the admin page if admin, or to the base url if non admin
 					$this->session->set_flashdata('message', $this->ion_auth->errors());
-					if ($this->ion_auth->is_admin()){
-						redirect('auth', 'refresh');
-					}else{
-						redirect('/', 'refresh');
-					}
-
+					$this->redirectUser();
 				}
 
 			}
@@ -677,8 +671,7 @@ class Auth extends CI_Controller{
 	 *
 	 * @param int|string $id
 	 */
-	public function edit_group($id)
-	{
+	public function edit_group($id){
 		// bail if no group id given
 		if (!$id || empty($id)){
 			redirect('auth', 'refresh');
@@ -765,8 +758,7 @@ class Auth extends CI_Controller{
 	 *
 	 * @return mixed
 	 */
-	public function _render_page($view, $data = NULL, $returnhtml = FALSE)//I think this makes more sense
-	{
+	public function _render_page($view, $data = NULL, $returnhtml = FALSE){
 
 		$this->viewdata = (empty($data)) ? $this->data : $data;
 
