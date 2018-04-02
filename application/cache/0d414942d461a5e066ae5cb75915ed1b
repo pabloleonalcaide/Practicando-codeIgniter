@@ -1,4 +1,4 @@
-a:2:{s:6:"expire";i:1522081680;s:7:"headers";a:0:{}}ENDCI---><html>
+a:2:{s:6:"expire";i:1522662674;s:7:"headers";a:0:{}}ENDCI---><html>
 	<head>
 		<title> Titulo prueba </title>
 
@@ -8,11 +8,11 @@ a:2:{s:6:"expire";i:1522081680;s:7:"headers";a:0:{}}ENDCI---><html>
 		<h3>Hi! this works!</h3>
 <p> Hi! This is the Home Page! </p>
 <p> Learning CodeIgniter :) </p>
-<a href="http://localhost/codeIgniter/index.php/lista/"> Lista </a> Lista de elementos cargados desde el modelo <br>
-<a href="http://localhost/codeIgniter/index.php/news"> Noticias </a> Listado de noticias <br>
-<a href="http://localhost/codeIgniter/index.php/news/create"> Crear Noticia </a> Añadir noticia a la bd <br>
+<a href="http://localhost/codeIgniterPruebas/index.php/lista/"> Lista </a> Lista de elementos cargados desde el modelo <br>
+<a href="http://localhost/codeIgniterPruebas/index.php/news"> Noticias </a> Listado de noticias <br>
+<a href="http://localhost/codeIgniterPruebas/index.php/news/create"> Crear Noticia </a> Añadir noticia a la bd <br>
 		<em> &copy; 2018</em>
-		<a href="http://localhost/codeIgniter/index.php/">Home</a>
+		<a href="http://localhost/codeIgniterPruebas/index.php/">Home</a>
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="http://127.0.0.1/codeIgniter/css/style.css">
