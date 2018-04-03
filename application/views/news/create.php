@@ -14,5 +14,4 @@
     <textarea name="text"></textarea><br />
 
     <input type="submit" name="submit" value="Create news item" />
-
 </form>

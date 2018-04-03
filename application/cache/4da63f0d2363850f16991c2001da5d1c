@@ -1,0 +1,17 @@
+a:2:{s:6:"expire";i:1522741481;s:7:"headers";a:0:{}}ENDCI---><html>
+	<head>
+		<title> Titulo prueba </title>
+
+	</head>
+	<body>
+		<h1>noticia1</h1>
+		<h3>Subtitle</h3>
+<h2>noticia1</h2>noticia1 primera noticia<br><a href="../news">back</a><br>		<br>
+		<em> &copy; 2018</em>
+		<a href="http://[::1]/codeigniter/index.php/">Index</a><br>
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+		<script type='text/javascript' src="http://[::1]/codeigniter/application/js/scriptPruebas.js"></script>
+
+	</body>
+</html>

@@ -1,4 +1,4 @@
-a:2:{s:6:"expire";i:1522662674;s:7:"headers";a:0:{}}ENDCI---><html>
+a:2:{s:6:"expire";i:1522739830;s:7:"headers";a:0:{}}ENDCI---><html>
 	<head>
 		<title> Titulo prueba </title>
 
@@ -7,15 +7,15 @@ a:2:{s:6:"expire";i:1522662674;s:7:"headers";a:0:{}}ENDCI---><html>
 		<h1>Home</h1>
 		<h3>Hi! this works!</h3>
 <p> Hi! This is the Home Page! </p>
-<p> Learning CodeIgniter :) </p>
-<a href="http://localhost/codeIgniterPruebas/index.php/lista/"> Lista </a> Lista de elementos cargados desde el modelo <br>
-<a href="http://localhost/codeIgniterPruebas/index.php/news"> Noticias </a> Listado de noticias <br>
-<a href="http://localhost/codeIgniterPruebas/index.php/news/create"> Crear Noticia </a> Añadir noticia a la bd <br>
+<a href="http://127.0.0.1/codeIgniter/index.php/lista">Lista</a> Lista de elementos cargados desde el modelo<br>
+<a href="http://127.0.0.1/codeIgniter/index.php/news">Noticias</a> Listado de noticias <br>
+<a href="http://127.0.0.1/codeIgniter/index.php/news/create">Crear_noticia</a>Añadir noticia a la bd <br>
+<a href="http://127.0.0.1/codeIgniter/index.php/news/create" onclick="window.open('http://127.0.0.1/codeIgniter/index.php/news/create', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;">popup!</a>		<br>
 		<em> &copy; 2018</em>
-		<a href="http://localhost/codeIgniterPruebas/index.php/">Home</a>
+		<a href="http://127.0.0.1/codeIgniter/index.php/">Index</a><br>
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="http://127.0.0.1/codeIgniter/css/style.css">
-<script type='text/javascript' src="http://127.0.0.1/codeIgniter/application/js/scriptPruebas.js"></script>
+		<script type='text/javascript' src="http://127.0.0.1/codeIgniter/application/js/scriptPruebas.js"></script>
+
 	</body>
 </html>

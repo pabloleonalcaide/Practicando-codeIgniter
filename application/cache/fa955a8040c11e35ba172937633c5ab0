@@ -1,0 +1,42 @@
+a:2:{s:6:"expire";i:1521815590;s:7:"headers";a:0:{}}ENDCI---><html>
+	<head>
+		<title> Titulo prueba </title>
+
+	</head>
+	<body>
+		<h1>News archive</h1>
+		<h3>Subtitle</h3>
+
+<h2>News archive</h2> 
+
+	<h3> noticia1 </h3>
+	<div class='main'>
+		noticia1 primera noticia	</div>
+	<p><a href="http://[::1]/codeIgniter/index.php/news/n1">View article</a></p>
+	<h3> noticia2 </h3>
+	<div class='main'>
+		noticia2 la segunda noticia	</div>
+	<p><a href="http://[::1]/codeIgniter/index.php/news/n2">View article</a></p>
+	<h3> noticia3 </h3>
+	<div class='main'>
+		noticia3 la tercera noticia	</div>
+	<p><a href="http://[::1]/codeIgniter/index.php/news/n3">View article</a></p>
+	<h3> añadido1 </h3>
+	<div class='main'>
+		primer añadido	</div>
+	<p><a href="http://[::1]/codeIgniter/index.php/news/a">View article</a></p>
+	<h3> añadido2 </h3>
+	<div class='main'>
+		segundo añadido	</div>
+	<p><a href="http://[::1]/codeIgniter/index.php/news/a">View article</a></p>
+	<h3> vuelta a probar </h3>
+	<div class='main'>
+		vuelta a probar	</div>
+	<p><a href="http://[::1]/codeIgniter/index.php/news/vuelta-a-probar">View article</a></p>
+		<em> &copy; 2018</em>
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="http://[::1]/codeIgniter/css/style.css">
+<script type='text/javascript' src="http://[::1]/codeIgniter/application/js/scriptPruebas.js"></script>
+	</body>
+</html>

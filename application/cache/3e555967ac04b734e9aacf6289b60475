@@ -1,4 +1,4 @@
-a:2:{s:6:"expire";i:1522669653;s:7:"headers";a:0:{}}ENDCI---><html>
+a:2:{s:6:"expire";i:1522663154;s:7:"headers";a:0:{}}ENDCI---><html>
 	<head>
 		<title> Titulo prueba </title>
 
@@ -8,7 +8,7 @@ a:2:{s:6:"expire";i:1522669653;s:7:"headers";a:0:{}}ENDCI---><html>
 		<h3>Subtitle</h3>
 <h2>Create a news item</h2>
 
-<form action="http://127.0.0.1/codeIgniter/index.php/news/create" method="post" accept-charset="utf-8">
+<form action="http://[::1]/codeIgniter/index.php/news/create" method="post" accept-charset="utf-8">
 
     <label for="title">Title</label>
     <input type="input" name="title" /><br />
@@ -17,17 +17,12 @@ a:2:{s:6:"expire";i:1522669653;s:7:"headers";a:0:{}}ENDCI---><html>
     <textarea name="text"></textarea><br />
 
     <input type="submit" name="submit" value="Create news item" />
+
 </form>		<em> &copy; 2018</em>
-		<a href="http://127.0.0.1/codeIgniter/index.php/">Index</a><br>
+		<a href="http://localhost/codeIgniterPruebas/index.php/">Home</a>
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous"></script>
-		<script type='text/javascript' src="http://127.0.0.1/codeIgniter/application/js/scriptPruebas.js"></script>
-		<script>
-	  		if($(window).width()< 900){
-	  			alert("menor");
-	  		}else{
-	  			alert("mayor");
-	  		}
-		</script>
+		<link rel="stylesheet" type="text/css" href="http://[::1]/codeIgniter/css/style.css">
+<script type='text/javascript' src="http://[::1]/codeIgniter/application/js/scriptPruebas.js"></script>
 	</body>
 </html>

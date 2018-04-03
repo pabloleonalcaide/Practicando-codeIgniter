@@ -1,0 +1,22 @@
+a:2:{s:6:"expire";i:1521815588;s:7:"headers";a:0:{}}ENDCI---><html>
+	<head>
+		<title> lista </title>
+
+	</head>
+	<body>
+		<h1>titulo</h1>
+		<h3>lista de prueba</h3>
+	<h2> Lista con enlaces </h2>
+	<ul>
+			<li><a href="http://www.google.es"> google</a></li>
+			<li><a href="http://www.github.com"> github</a></li>
+			<li><a href="http://www.yahoo.es"> yahoo</a></li>
+			<li><a href="http://www.gmail.es"> gmail</a></li>
+		</ul>
+		<em> &copy; 2018</em>
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="http://[::1]/codeIgniter/css/style.css">
+<script type='text/javascript' src="http://[::1]/codeIgniter/application/js/scriptPruebas.js"></script>
+	</body>
+</html>
